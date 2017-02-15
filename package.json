@@ -1,0 +1,34 @@
+{
+  "name": "hello-world",
+  "version": "0.0.1",
+  "description": "Hello World",
+  "main": "server.js",
+  "publishConfig": {
+    "registry": "https://npmjs.itcs.hpecorp.net"
+  },
+  "engine-strict": true,
+  "engines": {
+    "node": "^5.11"
+  },
+  "scripts": {
+    "test": "lab -cv",
+    "start": "set NODE_ENV=development&&node server.js"
+  },
+  "keywords": [
+    "api",
+    "apis",
+    "integration",
+    "rest",
+    "swagger"
+  ],
+  "author": "cv",
+  "license": "MIT",
+  "dependencies": {
+    "@hpe/addison-engine": "0.x",
+    "joi": "9.x"
+  },
+  "devDependencies": {
+    "lab": "10.x",
+    "code": "4.x"
+  }
+}
